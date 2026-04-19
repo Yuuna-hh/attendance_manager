@@ -179,8 +179,10 @@ class AttendanceController extends Controller
         return view('general.attendance_detail', [
             'attendance' => $attendance,
             'user' => $attendance->user,
-            'breaks' => $attendance->breaks,
+            'breaks' => $pendingCorrection?->breakCorrections ?? $attendance->breaks,
+            'pendingCorrection' => $pendingCorrection,
             'isPendingCorrection' => (bool) $pendingCorrection,
+            'displayNote' => $pendingCorrection?->requested_note ?? $attendance->note,
         ]);
     }
 

@@ -56,10 +56,5 @@
     .staffList__table th,
     .staffList__table td {
         padding: 12px 10px;
-        font-size: 12px;
-    }
-
-    .staffList__detail {
-        font-size: 12px;
     }
 }

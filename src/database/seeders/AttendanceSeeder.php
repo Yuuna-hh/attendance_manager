@@ -23,7 +23,7 @@ class AttendanceSeeder extends Seeder
                     'clock_in' => Carbon::parse($workDate . ' 09:00'),
                     'clock_out' => Carbon::parse($workDate . ' 18:00'),
                     'status' => 'finished',
-                    'note' => $i === 2 && $index === 0 ? '電車遅延のため少し遅れて出勤' : null,
+                    'note' => null,
                 ]);
             }
         }

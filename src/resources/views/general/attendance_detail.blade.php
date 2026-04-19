@@ -128,7 +128,7 @@
                         name="note"
                         class="attendanceDetail__textarea"
                         @if($isPendingCorrection) disabled @endif
-                    >{{ old('note') }}</textarea>
+                    >{{ old('note', $displayNote ?? $attendance->note) }}</textarea>
 
                     @error('note')
                         <p class="error-message">{{ $message }}</p>

@@ -77,7 +77,7 @@ file_put_contents(/var/www/storage/framework/sessions/xxxxxxxxxx): Failed to ope
 - mkdir -p storage/framework/cache
 - chmod -R 777 storage bootstrap/cache
 
-#### キャッシュのクリア（必要に応じて）
+#### キャッシュのクリア（その他トラブル等、必要に応じて）
 
 - docker-compose exec php bash
 - php artisan config:clear
