@@ -1,0 +1,179 @@
+.attendanceDetail {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.attendanceDetail__form {
+    width: 100%;
+}
+
+.attendanceDetail__card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.attendanceDetail__row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    min-height: 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.attendanceDetail__row:last-child {
+    border-bottom: none;
+}
+
+.attendanceDetail__row--textarea {
+    align-items: start;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.attendanceDetail__label {
+    padding: 0 20px 0 50px;
+    font-size: 15px;
+    font-weight: 700;
+    align-self: center;
+    color: #777;
+}
+
+.attendanceDetail__value {
+    padding: 18px 40px 18px 35px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.attendanceDetail__value--text {
+    padding-left: 54px;
+}
+
+.attendanceDetail__value--date {
+    display: flex;
+    gap: 120px;
+    padding-left: 54px;
+    align-items: center;
+}
+
+.attendanceDetail__timeGroup {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.attendanceDetail__timeInput {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.attendanceDetail__separator {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.attendanceDetail__textarea {
+    width: 100%;
+    max-width: 400px;
+    min-height: 76px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    color: #000000;
+    background: #ffffff;
+}
+
+.attendanceDetail__timeInput:disabled,
+.attendanceDetail__textarea:disabled {
+    border: none;
+    background: transparent;
+    cursor: default;
+    outline: none;
+    resize: none;
+}
+
+.attendanceDetail__buttonWrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 36px;
+}
+
+.attendanceDetail__submit {
+    width: 130px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* 申請詳細 */
+.attendanceDetail__timeDisplay {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+.attendanceDetail__noteDisplay {
+    width: 100%;
+    max-width: 400px;
+    min-height: 40px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+    white-space: pre-wrap;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    white-space: pre-wrap;
+}
+
+.attendanceDetail__readonly-message {
+    margin-top: 20px;
+    text-align: right;
+    color: #ff0000;
+    font-size: 14px;
+}
+
+/* 管理者画面の承認ボタン関連 */
+.attendanceDetail__submit--approved {
+    background: #777;
+    cursor: not-allowed;
+}
+
+.attendanceDetail__submit--approved:hover {
+    opacity: 1;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 850px) {
+    .attendanceDetail__row {
+        grid-template-columns: 170px 1fr;
+        min-height: 78px;
+    }
+
+    .attendanceDetail__value--date {
+        gap: 40px;
+    }
+
+    .attendanceDetail__timeGroup {
+        gap: 18px;
+    }
+}

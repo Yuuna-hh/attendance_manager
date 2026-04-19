@@ -1,0 +1,104 @@
+.attendance {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+}
+
+/* status badge */
+.attendance__badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: #d9d9d9;
+    color: #616161;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* date */
+.attendance__date {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* clock */
+.attendance__time {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* buttons/messages */
+.attendance__action {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendance__button {
+    min-width: 140px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.attendance__button:hover {
+    opacity: 0.85;
+}
+
+.attendance__button--sub {
+    min-width: 140px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.attendance__button--sub:hover {
+    background-color: #d0d0d0;
+}
+
+.attendance__message {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 850px) {
+    .attendance {
+        padding-top: 90px;
+    }
+
+    .attendance__badge {
+        font-size: 12px;
+        padding: 5px 14px;
+    }
+
+    .attendance__button,
+    .attendance__button--sub {
+        min-width: 120px;
+        height: 44px;
+        font-size: 14px;
+    }
+
+
+}

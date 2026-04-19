@@ -1,0 +1,130 @@
+.staffAttendanceList {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.staffAttendanceList__monthNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 42px;
+}
+
+.staffAttendanceList__monthBtn {
+    font-size: 14px;
+    font-weight: 700;
+    color: #777777;
+    text-decoration: none;
+}
+
+.staffAttendanceList__monthBtn--disabled {
+    visibility: hidden;
+}
+
+.staffAttendanceList__month {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.staffAttendanceList__calendar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.staffAttendanceList__calendarIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.staffAttendanceList__monthInput {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.staffAttendanceList__tableWrap {
+    margin-top: 18px;
+}
+
+.staffAttendanceList__table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.staffAttendanceList__table th,
+.staffAttendanceList__table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.staffAttendanceList__table th {
+    color: #777777;
+}
+
+.staffAttendanceList__table td {
+    color: #777777;
+}
+
+.staffAttendanceList__table tr:last-child td {
+    border-bottom: none;
+}
+
+.staffAttendanceList__detail {
+    color: #000000;
+    text-decoration: none;
+}
+
+.staffAttendanceList__buttonWrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 36px;
+}
+
+.staffAttendanceList__csvButton {
+    width: 148px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 850px) {
+    .staffAttendanceList {
+        padding: 0 16px;
+    }
+
+    .staffAttendanceList__monthNav {
+        padding: 12px 14px;
+        margin-top: 28px;
+    }
+
+    .staffAttendanceList__month {
+        font-size: 16px;
+    }
+
+    .staffAttendanceList__table th,
+    .staffAttendanceList__table td {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .staffAttendanceList__csvButton {
+        width: 120px;
+        font-size: 14px;
+    }
+}

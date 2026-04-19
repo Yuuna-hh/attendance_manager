@@ -1,0 +1,65 @@
+.staffList {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.staffList__tableWrap {
+    margin-top: 50px;
+}
+
+.staffList__table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.staffList__table th,
+.staffList__table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.staffList__table th {
+    color: #777;
+    background: #ffffff;
+}
+
+.staffList__table td {
+    color: #777;
+    background: #ffffff;
+}
+
+.staffList__table tr:last-child td {
+    border-bottom: none;
+}
+
+.staffList__detail {
+    color: #000000;
+    text-decoration: none;
+}
+
+.staffList__empty {
+    color: #777;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 850px) {
+    .staffList {
+        padding: 0 16px;
+    }
+
+    .staffList__table th,
+    .staffList__table td {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+
+    .staffList__detail {
+        font-size: 12px;
+    }
+}

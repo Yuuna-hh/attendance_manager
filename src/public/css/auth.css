@@ -1,0 +1,128 @@
+.auth {
+    background: #ffffff;
+    padding: 60px 20px;
+    min-height: calc(100vh - 80px);
+}
+
+.auth__container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 60px;
+}
+
+.auth__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.auth__field {
+    margin-bottom: 25px;
+}
+
+.auth__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.auth__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+.auth__submit {
+    width: 100%;
+    height: 45px;
+    background: #000;
+    color: #fff;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.auth__bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth__link {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+/* email-verify */
+.verify {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.verify__text {
+    margin-top: 80px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.verify__cta {
+    margin-top: 28px;
+}
+
+.verify__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 44px;
+    background: #d9d9d9;
+    border: 1px solid #777;
+    border-radius: 6px;
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.verify__resend {
+    margin-top: 28px;
+}
+
+.verify__link {
+    border: none;
+    background: transparent;
+    color: #1d4ed8;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.verify__link:hover {
+    text-decoration: underline;
+}
+
+.verify__status {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 850px) {
+    .auth {
+        padding: 40px 20px;
+    }
+
+    .auth__container {
+        max-width: 420px;
+        padding: 40px 40px;
+    }
+
+    .auth__title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+}

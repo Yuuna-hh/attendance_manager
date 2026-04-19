@@ -1,0 +1,120 @@
+.attendanceList {
+    border-radius: 8px;
+    padding: 30px 40px;
+}
+
+/* Month Navigation */
+.attendanceList__monthNav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background: #fff;
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.attendanceList__month {
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.attendanceList__monthBtn {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.attendanceList__monthBtn:first-child {
+    justify-self: start;
+}
+
+.attendanceList__monthBtn:last-child {
+    justify-self: end;
+}
+
+/* Calendar */
+.attendanceList__calendar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.attendanceList__calendarIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.attendanceList__monthInput {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Table */
+.attendanceList__tableWrap {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.attendanceList__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendanceList__table thead {
+    border-bottom: 3px solid #f0eff2;
+}
+
+.attendanceList__table th {
+    text-align: left;
+    padding: 16px 18px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #777;
+    border-bottom: 3px solid #f0eff2;
+}
+
+.attendanceList__table td {
+    padding: 16px 18px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #777;
+    border-bottom: 3px solid #f0eff2;
+}
+
+.attendanceList__table th:first-child,
+.attendanceList__table td:first-child {
+    padding-left: 50px;
+    width: 120px;
+}
+
+/* Detail Button */
+.attendanceList__detail {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.attendanceList__detail:hover {
+    text-decoration: underline;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 850px) {
+
+    .attendanceList {
+        padding: 25px 25px;
+    }
+
+    .attendanceList__table th,
+    .attendanceList__table td {
+        padding: 12px 6px;
+    }
+
+}

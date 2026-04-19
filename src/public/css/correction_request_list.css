@@ -1,0 +1,86 @@
+.correctionRequestList {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.correctionRequestList__tabs {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 30px;
+    padding: 0 40px 15px;
+    border-bottom: 1px solid #000;
+}
+
+.correctionRequestList__tab {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.correctionRequestList__tab--active {
+    color: #000000;
+    font-weight: 700;
+}
+
+.correctionRequestList__tableWrap {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.correctionRequestList__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.correctionRequestList__table th {
+    padding: 16px 18px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    font-weight: 700;
+    color: #777;
+    text-align: left;
+}
+
+.correctionRequestList__table td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    font-weight: 700;
+    color: #777;
+}
+
+.correctionRequestList__table th:first-child,
+.correctionRequestList__table td:first-child {
+    padding-left: 26px;
+}
+
+.correctionRequestList__detail {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+.correctionRequestList__empty {
+    text-align: center;
+    color: #777;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 850px) {
+    .correctionRequestList__tabs {
+        gap: 40px;
+    }
+
+    .correctionRequestList__table th,
+    .correctionRequestList__table td {
+        padding: 14px 10px;
+        font-size: 13px;
+    }
+
+    .correctionRequestList__table th:first-child,
+    .correctionRequestList__table td:first-child {
+        padding-left: 18px;
+    }
+}
